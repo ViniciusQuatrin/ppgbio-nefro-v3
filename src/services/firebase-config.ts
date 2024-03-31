@@ -27,7 +27,7 @@
 // }
 
 // export async function saveUserData(finalStep: number) {
-//   let userData: CreateUser | null;
+//   let userData: Creat eUser | null;
 //   if (finalStep === 13) {
 //     userData = getFormResult(true);
 //   } else {

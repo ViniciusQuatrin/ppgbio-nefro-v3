@@ -1,4 +1,4 @@
-import { Question, UserData } from 'shared/interfaces/firestore-db';
+import { Question, UserData } from 'shared/interfaces/mysql-db';
 import { DataTable } from 'shared/interfaces/table';
 
 export function findQuestion(

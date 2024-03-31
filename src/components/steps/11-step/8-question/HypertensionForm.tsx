@@ -26,7 +26,7 @@ import {
 import { Transition } from 'shared/elements/Transition';
 import hypertension from 'shared/assets/hypertension.jpeg';
 import './Hypertension.css';
-import { Option, Question } from 'shared/interfaces/firestore-db';
+import { Option, Question } from 'shared/interfaces/mysql-db';
 import { setQuestion } from 'shared/util/questions';
 
 export const HypertensionForm = ({ selectSteps }: CheckerNextStep) => {

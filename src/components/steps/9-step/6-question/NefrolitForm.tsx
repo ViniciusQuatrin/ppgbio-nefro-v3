@@ -12,7 +12,7 @@ import {
 } from '@mui/material';
 import { LABELS, NEFROLIT_OPTIONS } from 'shared/constants/questions';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
-import { Option, Question } from 'shared/interfaces/firestore-db';
+import { Option, Question } from 'shared/interfaces/mysql-db';
 import { setQuestion } from 'shared/util/questions';
 
 export const NefrolitForm = ({ selectSteps }: CheckerNextStep) => {

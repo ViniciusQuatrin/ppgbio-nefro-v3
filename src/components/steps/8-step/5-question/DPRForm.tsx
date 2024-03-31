@@ -11,7 +11,7 @@ import {
   RadioGroup,
 } from '@mui/material';
 import { DPR_OPTIONS, LABELS } from 'shared/constants/questions';
-import { Option, Question } from 'shared/interfaces/firestore-db';
+import { Option, Question } from 'shared/interfaces/mysql-db';
 import { setQuestion } from 'shared/util/questions';
 
 export const DPRForm = ({ selectSteps }: CheckerNextStep) => {

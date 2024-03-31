@@ -17,7 +17,7 @@ import {
 } from '@mui/material';
 import './ProteinuriaForm.css';
 import { LABELS } from 'shared/constants/questions';
-import { Question } from 'shared/interfaces/firestore-db';
+import { Question } from 'shared/interfaces/mysql-db';
 import { setQuestion } from 'shared/util/questions';
 
 export const ProteinuriaForm = ({ selectSteps }: CheckerNextStep) => {

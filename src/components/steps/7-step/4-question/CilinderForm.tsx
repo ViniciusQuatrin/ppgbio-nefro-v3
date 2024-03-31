@@ -12,7 +12,7 @@ import './CilinderForm.css';
 import { QuestionMarkTooltip } from 'shared/elements/QuestionMarkTooltip';
 import cilinder from 'shared/assets/cilinder.jpeg';
 import { LABELS } from 'shared/constants/questions';
-import { Question } from 'shared/interfaces/firestore-db';
+import { Question } from 'shared/interfaces/mysql-db';
 import { setQuestion } from 'shared/util/questions';
 
 export const CilinderForm = ({ selectSteps }: CheckerNextStep) => {

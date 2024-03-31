@@ -3,7 +3,7 @@ import {
   FormData,
   Option,
   Question,
-} from 'shared/interfaces/firestore-db';
+} from 'shared/interfaces/mysql-db';
 import { QuestionKey, questionMap } from 'shared/interfaces/form';
 
 export function getFormResult(result: boolean): CreateUser | null {

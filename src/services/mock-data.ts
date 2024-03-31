@@ -1,4 +1,4 @@
-import { CreateUser, Question, UserData } from 'shared/interfaces/firestore-db';
+import { CreateUser, Question, UserData } from 'shared/interfaces/mysql-db';
 
 const mockUserSaveData: CreateUser = {
   resultForm: true,

@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { CheckerNextStep } from 'shared/interfaces/form';
-import { Option, Question } from 'shared/interfaces/firestore-db';
+import { Option, Question } from 'shared/interfaces/mysql-db';
 import {
   Checkbox,
   FormControl,

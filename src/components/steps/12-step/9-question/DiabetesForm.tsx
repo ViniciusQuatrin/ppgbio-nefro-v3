@@ -12,7 +12,7 @@ import diabetes from 'shared/assets/diabetes.jpeg';
 import macroalb from 'shared/assets/macroalb.jpeg';
 import './DiabetesForm.css';
 import { LABELS } from 'shared/constants/questions';
-import { Question } from 'shared/interfaces/firestore-db';
+import { Question } from 'shared/interfaces/mysql-db';
 import { setQuestion } from 'shared/util/questions';
 
 export const DiabetesForm = ({ selectSteps }: CheckerNextStep) => {

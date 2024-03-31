@@ -4,7 +4,7 @@ import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 import { COLUMNS, LOCALE_TEXT_PT } from 'shared/constants/table';
 import { DataTable } from 'shared/interfaces/table';
 import { convertToDataTable } from 'shared/util/table';
-import { UserData } from 'shared/interfaces/firestore-db';
+import { UserData } from 'shared/interfaces/mysql-db';
 
 export default function TableView() {
   const columns: GridColDef[] = COLUMNS;

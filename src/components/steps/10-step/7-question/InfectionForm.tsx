@@ -25,7 +25,7 @@ import {
   formControlLabelStyle,
 } from 'shared/constants/questions';
 import { conditionsInfection } from 'shared/assets/infection';
-import { Option, Question } from 'shared/interfaces/firestore-db';
+import { Option, Question } from 'shared/interfaces/mysql-db';
 import { setQuestion } from 'shared/util/questions';
 
 export const InfectionForm = ({ selectSteps }: CheckerNextStep) => {

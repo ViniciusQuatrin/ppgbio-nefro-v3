@@ -9,7 +9,7 @@ import {
   RadioGroup,
 } from '@mui/material';
 import { LABELS } from 'shared/constants/questions';
-import { Question } from 'shared/interfaces/firestore-db';
+import { Question } from 'shared/interfaces/mysql-db';
 import { setQuestion } from 'shared/util/questions';
 
 export const RenalFunctionForm = ({ selectSteps }: CheckerNextStep) => {

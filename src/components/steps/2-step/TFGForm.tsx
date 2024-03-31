@@ -22,7 +22,7 @@ import {
   saveFormDataLocalStorage,
 } from 'shared/util/util';
 import './TFGForm.css';
-import { FormData } from 'shared/interfaces/firestore-db';
+import { FormData } from 'shared/interfaces/mysql-db';
 
 export const TFGForm = ({ selectSteps }: CheckerNextStep) => {
   const [age, setAge] = useState('');
