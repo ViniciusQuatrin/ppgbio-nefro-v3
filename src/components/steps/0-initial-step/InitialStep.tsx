@@ -3,12 +3,28 @@ import { CheckerNextStep } from 'shared/interfaces/form';
 import { useEffect } from 'react';
 import initialImage from 'shared/assets/initial-img.jpeg';
 import { Link } from '@mui/material';
+import { makeRequest } from 'services/api';
+
+
 
 export const InitialStep = ({ selectSteps }: CheckerNextStep) => {
   useEffect(() => {
+    makeRequest('/', 'GET')
+      .then(data => {
+        if (data) {
+          console.log(data);
+        } else {
+          console.log('error on request');
+        }
+      })
+      .catch(error => {
+        console.log(error)
+      });
+
     selectSteps(1, 0);
     localStorage.clear();
-  });
+  }, [selectSteps]);
+
   return (
     <div>
       <h2 className='initial'>
@@ -50,6 +66,7 @@ export const InitialStep = ({ selectSteps }: CheckerNextStep) => {
               <ul className='list'>
                 <li>Consultores</li>
                 <li>Karina Litchteneker</li>
+                <li>Vinícius Quatrin</li>
                 <li>Guilherme de Araujo Gabriel</li>
                 <li>Jefferson Gustavo Martins</li>
               </ul>

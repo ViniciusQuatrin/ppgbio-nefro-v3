@@ -32,10 +32,10 @@ import {
 } from 'components/steps/';
 import { InitialStep } from 'components/steps/0-initial-step/InitialStep';
 import { Alert } from 'shared/elements/Alert';
-import { saveUserData } from 'services/firebase-config';
 import { FormComponent } from 'shared/interfaces/form';
 import { useForm } from 'hooks/useForm';
 import { TabsControl } from 'shared/interfaces/table';
+
 
 export default function FormView({ controlTab }: TabsControl) {
   const [nextStep, setNextStep] = useState(0);
@@ -168,18 +168,7 @@ export default function FormView({ controlTab }: TabsControl) {
                         disabled={disableSaveButton}
                         type='submit'
                         onClick={() => {
-                          saveUserData(currentStep)
-                            .then(() => {
-                              updateStatusMessage('success', 'Dados salvos');
-                              setDisableSaveButton(true);
-                            })
-                            .catch((e) => {
-                              console.error(e);
-                              updateStatusMessage(
-                                'error',
-                                'Falha ao salvar os dados!'
-                              );
-                            });
+                          console.log("clicado");
                         }}
                       >
                         Salvar dados

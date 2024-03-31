@@ -2,9 +2,12 @@ import { useState } from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import { useEffect } from 'react';
 import FormView from 'views/form-view/Form-view';
 import TableView from 'views/table-view/Table-view';
 import 'App.css';
+import { makeRequest } from 'services/api';
+import { InitialStep } from 'components/steps/0-initial-step/InitialStep';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -14,7 +17,7 @@ interface TabPanelProps {
 
 function TabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;
-
+  
   return (
     <div
       role='tabpanel'
@@ -40,6 +43,21 @@ function a11yProps(index: number) {
 }
 
 export default function BasicTabs() {
+  const App = () => {
+    useEffect(() => {
+      makeRequest('/', 'GET')
+        .then(data => {
+          if (data) {
+            console.log(data);
+          } else {
+            console.log('error on request');
+          }
+        })
+        .catch(error => {
+          console.log(error)
+        });
+    });
+  }
   const [value, setValue] = useState(0);
   const [disableFormTab, setDisableFormTab] = useState(false);
   const [disableTableTab, setDisableTableTab] = useState(false);
@@ -52,6 +70,7 @@ export default function BasicTabs() {
     setDisableFormTab(disableFormTab);
     setDisableTableTab(disableTableTab);
   };
+  
 
   return (
     <div className='main-container'>
